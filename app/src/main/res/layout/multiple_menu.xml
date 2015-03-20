@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pt="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/multiple_menu">
+
+    <com.indovation.utils.PTButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mazda6"
+        android:id="@+id/btn_multiple_fragment_menu_mazda6"
+        android:layout_weight="1"
+        pt:typeface="opensans_light"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BMW M4"
+        android:id="@+id/btn_multiple_fragment_menu_m4"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:id="@+id/btn_multiple_fragment_menu_other"
+        android:layout_gravity="right"
+        android:layout_weight="1" />
+</LinearLayout>

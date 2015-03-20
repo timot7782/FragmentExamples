@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.indovation.fragmentsexample" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.indovation.simplefragment.SimpleFragmentActivity"
+            android:label="@string/title_activity_simple_fragment"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.indovation.fragmentsexample.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.indovation.com.indovation.multiplefragment.MultipleFragmentActivity"
+            android:label="@string/title_activity_multiple_fragment"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.indovation.fragmentsexample.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.indovation.viewpager.ViewPagerActivity"
+            android:label="@string/title_activity_view_pager"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.indovation.fragmentsexample.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
